@@ -133,7 +133,7 @@ h3
 	&.red-bottom
 		list-style: none
 		padding: 10px 7px
-		border-right: 1px solid #e8e8e8
+		// border-right: 1px solid #e8e8e8
 		li
 			display: inline-block
 		a
@@ -185,7 +185,7 @@ h3
 		&:hover img
 			border-color: #ddd
 .navbar-social
-	border-right: 1px solid #e8e8e8
+	// border-right: 1px solid #e8e8e8
 	border-bottom: 1px solid #e8e8e8
 	padding: 5px 12px 5px 5px
 	padding-left: 180px
@@ -520,21 +520,27 @@ h3
 		li
 			margin-bottom: 11px
 	&.e-full
-		width: 100%
+		flex-basis: 100%
 		margin-top: 35px
 		padding-top: 20px
 		padding-right: 0
 		border-top: 1px solid #ededed
-		display: flex
-		justify-content: space-between
+		text-align: center
 		img
 			max-width: 140px
 		li
 			margin-left: 19px
 			margin-top: 21px
+			&:first-child
+				margin-left: 0
+		a
+			margin-left: auto
+			margin-right: auto
+			display: inline-block
 .e-footer-social
 	display: flex
 	flex-wrap: wrap
+	justify-content: center
 	a
 		opacity: 0.6
 		&:hover, &:focus
@@ -578,6 +584,7 @@ h3
 		justify-content: space-between
 		display: flex
 		flex-wrap: wrap
+		padding-top: 30px
 		.e-img-box
 			width: 193px
 			height: 193px
