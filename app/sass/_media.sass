@@ -1,0 +1,446 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+	.e-wrapper
+		width: 1200px
+	.e-partner a
+		font-size: 27px
+	.sect-1 
+		background-size: 500px
+	.e-about-wrapper .col-9 p
+		padding-right: 0
+	.content h3
+		font-size: 28px
+		margin-top: 20px
+		padding-bottom: 16px
+	.e-about-wrapper
+		padding-top: 25px
+	.e-about-wrapper .col-9 h4
+		font-size: 30px
+		line-height: 26px
+		margin-bottom: 5px
+	.e-about-wrapper .col-9 p
+		line-height: 22px
+	.e-about-wrapper .e-img-logo img
+		height: 180px
+		width: auto
+	.header
+		overflow: hidden
+	.e-faq .panel-heading a
+		font-size: 25px
+	.e-faq .panel-heading+.panel-collapse>.panel-body
+		line-height: 22px
+	.e-vacancy .e-vacancy-name
+		flex-basis: calc(100% - 710px)
+	.e-vacancy .e-vacancy-price, .e-vacancy .e-vacancy-more, .e-vacancy .e-vacancy-write
+		flex-basis: 180px
+	.e-vacancy .e-vacancy-price h4, .e-vacancy .e-vacancy-more a, .e-vacancy .e-vacancy-write a
+		height: 60px
+		flex-basis: 180px
+	.e-vacancy .e-vacancy-more a, .e-vacancy .e-vacancy-write a
+		padding-top: 11px
+	.e-vacancy .e-vacancy-price h4
+		padding-top: 18px
+@media only screen and (max-width : 1600px) and (max-height: 900px)
+	.header	
+		padding-bottom: 0
+		h2
+			margin-top: 140px
+			font-size: 140px
+			line-height: 130px
+	.sect-1 
+		padding-top: 230px
+		.e-wrapper
+			padding: 0
+	.sect-2
+		padding: 330px 0 0
+		background-size: cover
+		h3
+			font-size: 76px
+			.popup
+				left: 550px
+@media only screen and (max-width : 1600px) and (max-height: 800px)
+	.sect-1 
+		padding-top: 180px
+	.e-about-wrapper .e-about-gallery
+		height: 310px
+	.e-about-wrapper .e-partners-wrapper, .e-vacancy-wrapper
+		height: 520px
+@media only screen and (max-width : 1600px) and (max-height: 700px)
+	.sect-4
+		padding-top: 80px
+	.header
+		h2
+			margin-top: 60px
+	.sect-1 
+		padding-top: 120px
+	.sect-2
+		padding-top: 220px
+	.sect-3
+		padding: 30px 0 0
+	.sect-4
+		padding: 30px 0 0
+	.sect-4 form textarea
+		height: 250px
+	.e-about-wrapper .e-about-gallery
+		height: 170px
+	.e-about-wrapper .e-about-gallery .e-img-box
+		width: 150px
+		height: 150px
+	.e-about-wrapper .e-partners-wrapper, .e-vacancy-wrapper
+		height: 380px
+@media only screen and (max-width : 1200px)
+	.header
+		padding-bottom: 140px
+	.sect-1
+		padding: 100px 0
+		background-size: 400px
+		p
+			max-width: 60%
+	.sect-2
+		padding: 200px 0
+	.e-wrapper
+		width: 972px
+	.navbar-social
+		padding-left: 0
+	.navbar-right.red-bottom a
+		padding-left: 5px
+		padding-right: 5px
+	.e-partner a
+		font-size: 20px
+	.sect-2 h3 .popup
+		left: 500px
+	.footer
+		max-height: none
+	.e-about-wrapper .e-about-gallery, .e-about-wrapper .e-partners-wrapper, .e-vacancy-wrapper
+		height: auto
+		overflow: auto
+		padding-right: 0
+		margin-right: 0
+		&:hover
+			overflow: auto
+			padding-right: 0
+			margin-right: 0
+	.e-about-gallery
+		justify-content: space-between
+		display: flex
+		flex-wrap: wrap
+		margin-top: 17px
+	.e-vacancy
+		flex-wrap: wrap
+	.e-vacancy .e-vacancy-name
+		flex-basis: calc(100% - 100px)
+		padding-bottom: 20px
+	.modal.modal-partner .modal-dialog, .modal.modal-partner .modal-content
+		width: 900px
+	.e-about-wrapper .e-about-gallery
+		justify-content: space-around
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.e-wrapper
+		width: 750px
+	h3, .sect-2 h3
+		font-size: 80px
+	.sect-1 
+		padding: 50px 0
+	.e-partner
+		height: 180px
+	.sect-2 h3 .popup
+		left: 400px
+	.navbar-brand
+		padding: 70px 10px 10px
+	.navbar-social
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		li:nth-child(1), li:nth-child(2), li:nth-child(3)
+			width: 33%
+			text-align: center
+	.navbar-right.red-bottom
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		li:nth-child(1), li:nth-child(2), li:nth-child(3)
+			width: 33%
+		li
+			text-align: center
+			flex-grow: 2
+		li a:before
+			content: none
+	.sect-3 h3 a
+		padding-right: 25px
+		padding-left: 25px
+	.e-partner:last-child
+		img
+			display: none
+	.sect-4 form
+		width: 747px
+	// .sect-4 form .jq-selectbox, .sect-4 form input
+	// 	width: 229px
+	.sect-4 form .jq-selectbox
+		background-position-x: 204px
+	.e-about-wrapper .e-partner:last-child img
+		display: block
+	.modal.modal-partner .modal-dialog
+		width: auto
+	.modal-dialog
+		margin: 30px
+	.modal.modal-partner .modal-content
+		width: 100%
+	.e-modal-partner-wrapper
+		flex-wrap: wrap
+		.e-left
+			order: 2
+			flex-basis: 100%
+		.e-right
+			flex-basis: 100%
+			order: 1
+	.e-about-wrapper .col-9
+		flex-basis: 100%
+		margin-top: 20px
+	.e-about-wrapper .col-3
+		flex-basis: 100%
+		text-align: center
+	.e-about-wrapper .e-about-gallery .e-img-box
+		margin: 0 10px 30px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header
+		padding-bottom: 140px
+		padding-top: 0
+		.e-wrapper
+			padding: 0
+	.e-wrapper
+		width: 100%
+		padding: 0 15px
+	.sect-1
+		padding: 0
+	.sect-1 .e-wrapper
+		padding: 50px 10px
+	.navbar-brand
+		padding-top: 10px
+	.navbar-toggle
+		margin-top: 35px
+	.sect-1 .e-wrapper
+		background-size: 300px
+	h2, .sect-2 h2
+		font-size: 135px
+		line-height: 115px
+	.header h2
+		margin-top: 50px
+	h3, .sect-2 h3
+		font-size: 60px
+	.sect-2 h3 .popup
+		left: 245px
+	.sect-2 form
+		flex-wrap: wrap
+		input
+			margin-bottom: 30px
+	.sect-3 h3 a
+		display: inline-block
+		float: none
+		margin-top: 0
+	.e-partner
+		width: calc(50% - 30px)
+	.sect-4 form
+		width: 100%
+	.modal .modal-content
+		width: 100%
+	.navbar-social li a
+		padding: 5px 0
+	.content.e-about
+		padding: 0 10px
+	.e-vacancy .e-vacancy-img
+		display: none
+	.e-vacancy
+		margin-top: 30px
+	.e-vacancy:first-child
+		margin-top: 0
+	.header .e-img-bg
+		top: 110px
+@media only screen and (max-width : 605px)
+	.sect-3 h3 a
+		margin-top: 18px
+		width: 100%
+	.e-vacancy .e-vacancy-more, .e-vacancy .e-vacancy-price, .e-vacancy .e-vacancy-write
+		flex-basis: 100%
+		margin-bottom: 23px
+	.e-vacancy .e-vacancy-name
+		padding-bottom: 10px
+		flex-basis: 100%
+	.e-vacancy
+		padding-bottom: 5px
+		margin-top: 25px
+@media only screen and (max-width : 600px)
+	.e-modal-partner-wrapper .e-right a.site
+		margin-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 550px)
+	.sect-2 form
+		padding-top: 20px
+	.sect-4 form .jq-selectbox, .sect-4 form input, textarea
+		width: 100%
+		text-align: center
+		background-position-x: 90%
+	.e-partner
+		height: 100px
+	.e-header-more
+		margin-left: 0
+	.header
+		padding-bottom: 100px
+		h2
+			margin-top: 100px
+	.sect-1
+		padding-bottom: 0
+	.navbar-social li a
+		padding: 5px 0
+	.navbar-right.red-bottom
+		flex-direction: column
+		li
+			width: 100% !important
+			text-align: center
+	.e-header-user a
+		padding: 0
+	.sect-2 h3 .popup
+		position: static
+		margin-top: 32px
+	.sect-1 .e-wrapper
+		padding: 50px 15px
+	.sect-2, .sect-3, .sect-4
+		padding: 50px 0
+	.sect-1, .header, .sect-2, .sect-3, .sect-4, .footer
+		background-image: none
+		text-align: center
+	.sect-2 form input
+		margin: 0 auto 25px
+	.e-footer-wrapper
+		justify-content: space-around
+	.header h2
+		padding-left: 0
+	.sect-2 h3 .popup
+		margin: 32px auto 0
+	.sect-2 h3 .popup:before, .sect-2 h3 .popup:after
+		content: none
+	.e-footer-col
+		padding-left: 10px
+		padding-right: 10px
+	.sect-4 form input
+		margin-right: 0
+	.sect-1 p
+		max-width: none
+	.header .e-img-bg
+		display: none
+	.header, .sect-2, .sect-4
+		background: #000 url("../img/lines-black.jpg") center center 
+	.e-modal-partner-wrapper .e-right p
+		margin-bottom: 10px
+		font-size: 14px
+	textarea
+		height: 200px
+	.e-modal-partner-wrapper .e-right h3
+		font-size: 24px
+		margin-top: 0
+	.e-modal-partner-wrapper .e-right p
+		line-height: 24px
+	.e-modal-partner-wrapper .e-right a
+		height: 50px
+		padding-top: 7px
+		display: block
+		margin-left: auto
+		margin-right: auto
+	.e-modal-partner-wrapper .e-right a.mail
+		margin-bottom: 0
+	.e-about-wrapper .collapse
+		display: block
+		height: auto !important
+	.e-faq .panel-heading+.panel-collapse>.panel-body
+		&:before, &:after
+			border-color: transparent
+	.panel-title
+		text-align: left
+	.e-faq
+		.panel-heading
+			margin-top: 20px
+			a
+				line-height: 30px
+				border-bottom: none
+				span
+					color: $red
+		&:first-child .panel-heading
+			margin-top: 0
+			
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 430px)
+	.sect-4 form input
+		width: 100%
+	.sect-3 h3 a
+		display: block
+		text-align: center
+	h3, .sect-2 h3
+		font-size: 40px
+	h2, .header h2
+		font-size: 65px
+		line-height: 60px
+	.e-header-more
+		margin-left: 0
+		padding-left: 25px
+	.sect-2 h3 .popup
+		width: 290px
+	.navbar-social li
+		width: 33%
+		text-align: center
+		&:nth-child(1),&:nth-child(2), &:nth-child(3)
+			width: 100%
+	.modal h4
+		font-size: 26px
+		line-height: 30px
+		span
+			font-size: 14px
+	.modal .jq-selectbox, .modal input, .modal textarea
+		line-height: 30px
+	.e-footer-col .e-footer-social
+		margin-top: -20px
+	.modal-dialog
+		margin: 30px 10px
+	.e-vacancy-info a
+		float: none
+		margin-top: 20px
+	.e-about-wrapper .e-about-gallery .e-img-box
+		margin: 0 0 15px
+		width: 135px
+		height: 135px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

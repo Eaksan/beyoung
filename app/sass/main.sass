@@ -1,0 +1,868 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+a
+	transition: 0.4s
+	&:hover
+		text-decoration: none
+h2
+	font-size: 178px
+	color: #fff
+	font-family: "bebas"
+	font-weight: bold
+	line-height: 155px
+	span
+		display: block
+		line-height: 48px
+		font-size: 48px
+		padding-left: 4px
+		padding-bottom: 23px
+h3
+	font-size: 100px
+	font-family: "bebas"
+	font-weight: bold
+	margin-bottom: 25px
+	span
+		color: $red
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.e-wrapper
+	width: 1570px
+	margin: 0 auto
+.header
+	background: #000
+	padding-top: 27px
+	padding-bottom: 140px
+	position: relative
+	h2
+		margin-top: 138px
+		padding-left: 30px
+	.e-img-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		overflow: hidden
+		z-index: 0
+		img
+			width: 100%
+			height: auto
+	.e-wrapper
+		position: relative
+		z-index: 1
+.navbar-default .navbar-toggle
+	border: none
+	text-align: right
+	width: 55px
+	line-height: 4px
+	.icon-bar
+		background-color: #171717
+		width: 32px
+		display: inline-block
+		line-height: 4px
+		text-align: right
+		height: 4px
+		border-radius: 2px
+		&:nth-child(2)
+			width: 26px
+		&:last-child
+			width: 16px
+.e-header-more
+	font-size: 20px
+	color: #fff
+	font-family: "bebas"
+	margin-left: 36px
+	border-radius: 2px
+	padding: 16px 82px 12px 55px
+	letter-spacing: 0.1em
+	display: inline-block
+	margin-top: 11px
+	background: #ff1127 url("../img/arrow-right.png") 220px center no-repeat
+	&:hover
+		color: #fff
+		background-color: #e42436
+.navbar
+	border-radius: 2px
+.navbar-brand
+	height: auto
+	padding-left: 37px
+	padding-top: 20px
+	padding-bottom: 18px
+.e-collapse-wrapper
+	display: flex
+	justify-content: flex-end
+.navbar-right
+	margin-bottom: 0
+	&.red-bottom
+		list-style: none
+		padding: 10px 7px
+		border-right: 1px solid #e8e8e8
+		li
+			display: inline-block
+		a
+			font-size: 12px
+			display: block
+			position: relative
+			padding: 13px 17px 8px
+			font-family: "geometry"
+			font-weight: bold
+			text-transform: uppercase
+			color: #252525
+			&:before
+				position: absolute
+				content: ""
+				bottom: -11px
+				left: calc(50% - 13px)
+				width: 26px
+				height: 3px
+				background-color: transparent
+				transition: 0.3s
+			&:hover:before, &.active:before
+				background-color: $red
+.e-header-user
+	margin-right: -15px
+	padding-top: 22px
+	padding-right: 8px
+	a
+		position: relative
+		display: block
+		padding-left: 23px
+		img
+			border-radius: 50%
+			border: 7px solid #f3f3f3
+			width: 85px
+			transition: 0.3s
+			height: 85px
+		span
+			display: inline-block
+			position: absolute
+			top: 2px
+			right: 8px
+			min-width: 20px
+			text-align: center
+			line-height: 22px
+			height: 20px
+			color: #fff
+			border-radius: 10px
+			background-color: #ff1127
+		&:hover img
+			border-color: #ddd
+.navbar-social
+	border-right: 1px solid #e8e8e8
+	border-bottom: 1px solid #e8e8e8
+	padding: 5px 12px 5px 5px
+	padding-left: 180px
+	li
+		list-style: none
+		display: inline-block
+		a
+			color: #a3a3a3
+			display: inline-block
+			vertical-align: middle
+			font-size: 12px
+			line-height: 24px
+			padding: 15px 8px
+			font-family: "geometry"
+			text-transform: uppercase
+			opacity: 0.6
+			&:hover, &:focus
+				opacity: 1
+.sect-1
+	background: #fff url("../img/Puzzle.png") center right no-repeat
+	.e-wrapper
+		padding: 232px 35px 241px
+	p
+		max-width: 750px	
+		font-size: 21px
+		line-height: 40px
+		color: #171717
+		margin-bottom: 16px
+.sect-2
+	background: #000 url("../img/sect2-bg.jpg") center center no-repeat
+	padding: 318px 0 349px
+	h3
+		color: #fff
+		position: relative
+		.popup
+			position: absolute
+			font-size: 21px
+			line-height: 24px
+			top: -141px
+			padding: 34px 15px
+			left: 706px
+			color: #c1c1c1
+			border: 1px solid #c1c1c1
+			font-weight: normal
+			width: 306px
+			height: 109px
+			text-align: center
+			background-color: #000
+			&:before
+				content: ""
+				bottom: -39px
+				left: 29px
+				position: absolute
+				border-style: solid
+				border-width: 12px
+				border-top-width: 26px
+				border-color: transparent
+				border-top-color: #c1c1c1
+			&:after
+				content: ""
+				bottom: -37px
+				left: 29px
+				position: absolute
+				border-style: solid
+				border-width: 12px
+				border-top-width: 26px
+				border-color: transparent
+				border-top-color: #000
+	form
+		display: flex
+		padding-top: 18px
+		input
+			margin-right: 30px
+			width: 259px
+			border: none
+			font-size: 18px
+			line-height: 40px
+			padding: 10px 10px 10px 18px
+			font-weight: normal
+			background-color: #FFF
+			border-radius: 2px
+			color: #000
+			&[type="submit"]
+				font-family: "bebas"
+				font-size: 20px
+				letter-spacing: 0.1em
+				color: #fff
+				background-color: $red
+				transition: 0.4s
+				&:hover
+					color: #fff
+					background-color: #e42436
+.sect-3
+	background-color: #FFF
+	padding: 131px 0 144px
+	h3
+		margin-bottom: 35px
+		a
+			font-family: "bebas"
+			font-size: 20px
+			padding: 21px 69px 17px
+			margin-top: 15px
+			display: inline-block
+			vertical-align: top
+			float: right
+			letter-spacing: 0.1em
+			font-weight: normal
+			color: #fff
+			background-color: $red
+			&:hover
+				color: #fff
+				background-color: #e42436
+.e-partners-wrapper
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+.e-partner
+	border: 1px solid #c1c1c1
+	width: calc(25% - 30px)
+	height: 200px
+	justify-content: center
+	align-items: center
+	display: flex
+	margin: 0 15px 30px
+	transition: 0.3s
+	&:hover
+		border-color: $red
+		a
+			transform: scale(1.05)
+	a
+		font-size: 30px
+		width: 100%
+		height: 100%
+		letter-spacing: 0.1em
+		font-family: "bebas"
+		color: #000
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		outline: none
+		img
+			display: inline-block
+			max-width: 90%
+			max-height: 90%
+			vertical-align: middle
+.sect-4
+	background: #000 url("../img/sect4bg.png") center 0 no-repeat
+	padding: 114px 0 142px
+		position: relative
+	h3
+		color: #fff
+	form
+		width: 840px
+		padding-top: 9px
+		input, .jq-selectbox
+			width: 260px
+			margin-right: 26px
+			background-color: #fff
+			border: none
+			border-radius: 2px
+			font-size: 18px
+			line-height: 28px
+			display: inline-block
+			vertical-align: top
+			padding: 16px 24px
+			margin-bottom: 30px
+		.jq-selectbox
+			margin-right: 0
+			background: #fff url("../img/select-down.png") 230px center no-repeat
+		select
+			width: 100%
+			display: none
+		textarea
+			width: 100%
+			padding: 21px 24px
+			font-size: 18px
+			line-height: 28px
+			height: 300px
+			margin-bottom: 21px
+		.jq-selectbox__dropdown
+			background-color: #FFF
+			width: 100%
+			padding: 0
+			left: 0
+			top: 60px !important
+			ul
+				padding: 0
+				border-radius: 2px
+				box-shadow: 0 0 5px rgba(#000, 0.3)
+				li
+					padding: 10px 24px
+					border-bottom: 1px solid #ccc
+
+		.jq-selectbox__select-text
+			width: 100% !important
+		input[type="submit"]
+			font-family: "bebas"
+			font-size: 20px
+			display: inline-block
+			vertical-align: top
+			letter-spacing: 0.1em
+			font-weight: normal
+			color: #fff
+			background-color: $red
+			transition: 0.3s
+			&:hover
+				color: #fff
+				background-color: #e42436
+.e-top
+	background-color: transparent
+	position: absolute
+	bottom: 70px
+	right: 100px
+	border: none
+	transition: 0.6s
+	opacity: 0
+	transform: translateY(100%)
+	outline: none
+	&.show
+		opacity: 1
+		transform: translateY(0)
+	img
+		border-radius: 50%
+		background-color: rgba(#999, 0.4)
+		transform: rotate(-90deg)
+		transition: 0.3s
+		opacity: 0.7
+	span
+		display: block
+		font-family: "bebas"
+		font-size: 18px
+		color: #ccc
+		transition: 0.3s
+		opacity: 0
+		transform: translateY(100%)
+	&:hover
+		img
+			opacity: 1
+		span
+			opacity: 1
+			transform: translateY(0)
+			
+.modal
+	.modal-header, .modal-body
+		padding: 0
+		border: none
+	.close
+		background-color: $red
+		opacity: 1
+		height: 64px
+		width: 64px
+		border-radius: 50%
+		transform: translate(65px, -40px)
+	.modal-content
+		width: 640px
+		padding: 15px 35px
+	h4
+		color: #171717
+		font-family: "bebas"
+		font-size: 60px
+		font-weight: bold
+		line-height: 60px
+		span
+			display: block
+			color: #6f6f6f
+			font-size: 24px
+			font-weight: normal
+	input, textarea, .jq-selectbox
+		width: 100%
+		border: 2px solid #d7d7d7
+		border-radius: 3px
+		padding: 8px 25px
+		margin-bottom: 26px
+		font-size: 18px
+		line-height: 40px
+		transition: 0.3s
+		&:focus
+			border-color: $red
+	input[type="submit"]
+		background-color: $red
+		color: #fff
+		font-family: "bebas"
+		border-color: $red
+		font-size: 20px
+		letter-spacing: 0.1em
+	select
+		display: none
+	.jq-selectbox__dropdown
+		background-color: #FFF
+		width: 100%
+		padding: 0
+		left: 0
+		top: 60px !important
+		ul
+			padding: 0
+			border-radius: 2px
+			box-shadow: 0 0 5px rgba(#000, 0.3)
+			li
+				padding: 10px 24px
+				border-bottom: 1px solid #ccc
+	.jq-selectbox__select-text
+		width: 100% !important
+	.jq-selectbox
+		margin-right: 0
+		background: #fff url("../img/select-down.png") 530px center no-repeat
+.footer
+	max-height: 430px
+	padding-bottom: 20px
+.e-footer-wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.e-footer-col
+	padding-right: 25px
+	h4
+		font-family: "bebas"
+		font-size: 48px
+		line-height: 22px
+		margin-top: 61px
+		font-weight: bold
+		margin-bottom: 27px
+	a
+		font-size: 16px
+		line-height: 22px
+		color: #878787
+		&:hover
+			color: #666
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		li
+			margin-bottom: 11px
+	&.e-full
+		width: 100%
+		margin-top: 35px
+		padding-top: 20px
+		padding-right: 0
+		border-top: 1px solid #ededed
+		display: flex
+		justify-content: space-between
+		img
+			max-width: 140px
+		li
+			margin-left: 19px
+			margin-top: 21px
+.e-footer-social
+	display: flex
+	flex-wrap: wrap
+	a
+		opacity: 0.6
+		&:hover, &:focus
+			opacity: 1
+.content
+	padding: 0 36px
+	h3
+		font-size: 48px
+		color: #fff
+		margin-top: 30px
+		border-bottom: 1px solid #282828
+		margin-bottom: 0
+		padding-bottom: 23px
+.e-black
+	background-color: #000
+	padding-top: 1px
+.e-about-wrapper
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding-top: 35px
+	.col-3
+		flex-basis: 356px
+	.col-9
+		flex-basis: calc(100% - 356px)
+		h4
+			font-size: 48px
+			color: #ff1127
+			line-height: 40px
+			font-family: "bebas"
+			font-weight: bold
+			margin-top: 0
+			margin-bottom: 14px
+		p
+			color: #fff
+			padding-right: 60px
+			line-height: 30px
+	.e-about-gallery 
+		flex-basis: 100%
+		display: flex
+		justify-content: space-between
+		display: flex
+		flex-wrap: wrap
+		.e-img-box
+			width: 193px
+			height: 193px
+			border-radius: 3px
+			margin-bottom: 30px
+			img
+				display: block
+				width: 100%
+				height: 100%
+	.e-img-logo
+		display: inline-block
+		text-align: center
+		border: 1px solid #282828
+		max-width: 100%
+		img
+			display: block
+			padding: 26px
+.e-scroll
+.e-vacancy-wrapper
+	height: 600px
+	width: 100%
+	.overview
+		width: 100%
+.e-vacancy
+	display: flex
+	width: 100%
+	justify-content: space-between
+	margin: 45px 0 0
+	padding-bottom: 33px
+	border-bottom: 1px solid #282828
+	&:first-child
+		margin-top: 25px
+	.e-vacancy-img
+		flex-basis: 80px
+		.e-img-red
+			width: 80px
+			height: 80px
+			background-color: $red
+			border-radius: 40px
+			display: inline-flex
+			text-align: center
+			img
+				align-self: center
+				margin-left: auto
+				margin-right: auto
+	.e-vacancy-name
+		flex-basis: calc(100% - 842px)
+		color: #fff
+		h4
+			font-family: "bebas"
+			font-size: 24px
+			margin-top: 0
+		p
+			max-width: 600px
+			text-transform: uppercase
+	.e-vacancy-price
+		flex-basis: 200px
+		h4
+			display: block
+			color: #fff
+			height: 80px
+			background-color: #0b0b0b
+			font-family: "bebas"
+			text-align: center
+			font-size: 24px
+			font-weight: bold
+			margin: 0
+			padding-top: 28px
+	.e-vacancy-more
+		flex-basis: 200px
+		a
+			display: block
+			color: #0a0502
+			height: 80px	
+			background-color: #fff
+			font-family: "bebas"
+			text-align: center	
+			font-size: 24px	
+			font-weight: bold	
+			padding-top: 20px
+			letter-spacing: 0.1em
+	.e-vacancy-write
+		flex-basis: 232px
+		a
+			display: block
+			color: #fff
+			height: 80px
+			background-color: $red
+			font-family: "bebas"
+			font-size: 24px	
+			text-align: center	
+			font-weight: bold	
+			padding-top: 20px
+			letter-spacing: 0.1em
+.e-faq
+	background-color: transparent
+	margin-top: -7px
+	.panel-heading
+		background-color: transparent
+		border-radius: 0
+		padding: 0
+		font-family: "bebas"
+		letter-spacing: 0.1em
+		margin-bottom: 6px
+		a
+			color: $red
+			font-size: 48px
+			font-weight: bold
+			border-bottom: 1px dotted $red
+			&:focus
+				text-decoration: none
+			span
+				color: #fff
+				transition: 0.3s
+			&:hover, &[aria-expanded="true"]
+				border-color: transparent
+				span
+					color: $red
+	.panel-heading+.panel-collapse>.panel-body
+		border-radius: 3px
+		border: 1px solid #272727
+		color: #fff
+		font-size: 14px
+		line-height: 30px
+		position: relative
+		margin-top: 17px
+		font-weight: 300
+		&:before, &:after
+			position: absolute
+			content: ""
+			border: 13px solid transparent
+			border-bottom-color: #272727
+			border-bottom-width: 21px
+			left: 50px
+			top: -34px
+		&:after
+			top: -31px
+			border-bottom-color: #000
+.e-question
+	float: right
+	margin-top: 11px
+	p, a
+		display: inline-block
+	p
+		font-family: "bebas"
+		color: #fff
+		font-size: 24px
+		line-height: 30px
+	a
+		width: 30px
+		height: 30px
+		border-radius: 3px
+		display: inline-flex
+		align-self: center
+		justify-content: center
+		align-items: center
+		font-family: "bebas"
+		font-size: 30px
+		color: #000
+		&.plus
+			background-color: $red
+			color: #fff
+			margin-left: 10px
+			margin-right: 10px
+		&.minus
+			background-color: #FFF
+.modal.modal-partner
+	.close
+		position: absolute
+		transform: none
+		right: -30px
+		top: -30px
+	.modal-dialog
+		width: 1030px
+	.modal-content
+		width: 1030px
+		padding: 0
+.e-modal-partner-wrapper
+	display: flex
+	.e-left
+		background-color: #f2f2f2
+		flex-basis: 365px
+		border-right: 1px solid #dcdcdc
+		border-radius: 6px 0 0 6px
+	.e-right
+		flex-basis: calc(100% - 365px)
+		padding: 27px 30px 30px 32px 
+		h3
+			font-size: 48px
+			margin-bottom: 8px
+		p
+			line-height: 30px
+			font-weight: 300
+			margin-bottom: 28px
+		a
+			display: inline-block
+			width: 196px
+			height: 68px
+			text-align: center
+			padding-top: 15px
+			font-family: "bebas"
+			text-align: center
+			font-size: 22px
+			border-radius: 3px
+			letter-spacing: 0.1em
+			margin-right: 20px
+			&.site
+				color: #5f5f5f
+				border: 1px solid #dcdcdc
+			&.mail
+				background-color: $red
+				color: #fff
+.partner-logo
+	text-align: center
+	background-color: #FFF
+	border-bottom: 1px solid #dcdcdc
+	border-radius: 6px 0 0 0
+	img
+		display: block
+		margin: 0 auto
+		padding: 50px 0
+		max-width: 100%
+.partner-vacancys
+	padding: 0 20px
+	& > h4
+		font-size: 30px
+		margin: 0
+		padding-top: 13px
+		padding-bottom: 9px
+		a
+			float: right
+			font-family: "geometry"
+			font-size: 14px
+			color: #848484
+			font-weight: 400
+			padding-right: 16px
+			background: url("../img/vacancy-right.png") center right no-repeat
+.partner-vacancy
+	display: flex
+	justify-content: space-between
+	border-top: 1px solid #dcdcdc
+	padding: 23px 0 30px
+	h4
+		font-size: 24px
+		margin: 0 0 10px
+		line-height: 22px
+	p
+		font-size: 14px
+		margin-right: -5px
+		margin-bottom: 20px
+		color: #5e5e5e
+		line-height: 18px
+	.e-vacancy-img
+		flex-basis: 50px
+		height: 50px
+		background-color: #FFF
+		border-radius: 3px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		img
+			max-width: 28px
+.e-vacancy-info
+	flex-basis: calc(100% - 70px)
+	.e-vacancy-price, a
+		display: inline-block
+		width: 121px
+		height: 46px
+		padding-top: 9px
+		font-family: "bebas"
+		text-align: center
+		font-size: 18px
+		border-radius: 3px
+	.e-vacancy-price
+		color: #5f5f5f
+		border: 1px solid #dcdcdc
+	a
+		background-color: $red
+		color: #fff
+		float: right
+
+@import "media" // Всегда в конце
+
+
+
+
+
+
